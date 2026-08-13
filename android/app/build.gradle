@@ -113,7 +113,10 @@ tasks.register("prepareAssets") {
 			from "${localeFolder}" into "${assetsFolder}/locale"
 		}
 
-		file("${assetsFolder}/.nomedia").text = ""
+		                copy {
+                        from "${projRoot}/games/VoxeLibre" into "${assetsFolder}/games/VoxeLibre"
+                }
+file("${assetsFolder}/.nomedia").text = ""
 	}
 }
 
@@ -135,3 +138,4 @@ dependencies {
 	implementation project(':native')
 	implementation 'androidx.appcompat:appcompat:1.6.1'
 }
+
