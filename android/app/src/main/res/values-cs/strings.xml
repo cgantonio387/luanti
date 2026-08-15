@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="label">Luanti</string>
+    <string name="label">BlockCraft</string>
     <string name="loading">Načítání…</string>
     <string name="notification_channel_name">Upozornění</string>
     <string name="notification_channel_description">Upozornění od Luanti</string>
@@ -10,3 +10,4 @@
     <string name="ime_dialog_done">Hotovo</string>
     <string name="no_web_browser">Webový prohlížeč nenalezen</string>
 </resources>
+

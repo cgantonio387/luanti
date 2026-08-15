@@ -113,9 +113,6 @@ function singleplayer_refresh_gamebar()
 		end
 		btnbar:add_button(btn_name, text, image, tooltip)
 	end
-
-	local plus_image = core.formspec_escape(defaulttexturedir .. "plus.png")
-	btnbar:add_button("game_open_cdb", "", plus_image, fgettext("Install games from ContentDB"))
 	return true
 end
 
@@ -474,3 +471,4 @@ return {
 	cbf_button_handler = main_button_handler,
 	on_change = on_change
 }
+

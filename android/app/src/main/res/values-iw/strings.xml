@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="label">לואנטי</string>
+    <string name="label">BlockCraft</string>
     <string name="loading">טוען…</string>
     <string name="notification_channel_name">הודעה כללית</string>
     <string name="notification_channel_description">התראות מלואנטי</string>
@@ -10,3 +10,4 @@
     <string name="no_web_browser">לא נמצא דפדפן אינטרנט</string>
     <string name="unzip_notification_description">פחות מדקה אחת…</string>
 </resources>
+

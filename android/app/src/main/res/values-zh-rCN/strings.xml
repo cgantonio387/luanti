@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="label">Luanti</string>
+    <string name="label">BlockCraft</string>
     <string name="loading">加载中…</string>
     <string name="notification_channel_name">一般通知</string>
     <string name="notification_channel_description">Luanti 的通知</string>
@@ -10,3 +10,4 @@
     <string name="no_web_browser">未找到网页浏览器</string>
     <string name="game_notification_title">Luanti正在运行</string>
 </resources>
+
