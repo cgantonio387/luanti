@@ -101,7 +101,9 @@ return {
 			core.formspec_escape(get_renderer_info())
 		fs = fs .. "style_type[textarea;valign=center]" ..
 			"textarea[0.1,6;5.7,1;;" .. active_renderer_info .. ";]" ..
-			"hypertext[5.5,0.25;9.75,6.6;credits;" .. core.formspec_escape(hypertext) .. "]"
+			"hypertext[5.5,0.25;9.75,6.6;credits;" .. core.formspec_escape(hypertext) .. "]" ..
+                        "label[5.7,6.9;VoxeLibre]" ..
+                        "textarea[5.7,7.2;9.2,2.8;;VoxeLibre: This game includes VoxeLibre, free software distributed under the GNU General Public License v3.0 or later (GPLv3+). VoxeLibre includes components and resources distributed under various licenses, including GPLv3+, LGPL, MIT, Apache, CC BY-SA, CC BY and CC0. Copyright notices, credits and full license texts are preserved in the game distribution within the corresponding VoxeLibre files. VoxeLibre: https://github.com/VoxeLibre/VoxeLibre;]"
 
 		return fs
 	end,
@@ -123,3 +125,5 @@ return {
 		end
 	end,
 }
+
+

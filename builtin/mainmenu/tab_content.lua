@@ -75,8 +75,6 @@ local function get_formspec(tabview, name, tabdata)
 		"table[0.4,0.8;6.3,4.8;pkglist;",
 		pkgmgr.render_packagelist(packages, use_technical_names, update_icons),
 		";", tabdata.selected_pkg, "]",
-
-		"button[0.4,5.8;6.3,0.9;btn_contentdb;", contentdb_label, "]"
 	}
 
 	local selected_pkg
@@ -218,17 +216,7 @@ local function handle_buttons(tabview, fields, tabname, tabdata)
 		end
 		return true
 	end
-
-	if fields.btn_contentdb then
-		local dlg = create_contentdb_dlg()
-		dlg:set_parent(tabview)
-		tabview:hide()
-		dlg:show()
-		packages = nil
-		return true
-	end
-
-	if fields.btn_mod_mgr_rename_modpack then
+if fields.btn_mod_mgr_rename_modpack then
 		local mod = packages:get_list()[tabdata.selected_pkg]
 		local dlg_renamemp = create_rename_modpack_dlg(mod)
 		dlg_renamemp:set_parent(tabview)
@@ -291,3 +279,5 @@ return {
 	cbf_button_handler = handle_buttons,
 	on_change = on_change
 }
+
+
