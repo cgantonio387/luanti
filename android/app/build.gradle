@@ -135,7 +135,9 @@ clean {
 }
 
 dependencies {
+    implementation 'com.google.android.gms:play-services-ads:23.0.0'
 	implementation project(':native')
 	implementation 'androidx.appcompat:appcompat:1.6.1'
 }
+
 
